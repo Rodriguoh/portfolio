@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/logo.png" />
+    <title>Rodriguoh's Portfolio</title>
+    <meta name="description" content="Portfolio de Rodriguoh, retrouvez ici toutes mes création en graphisme developement web et audiovisuel">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <a href="portfolio/" id="book">
+        <div id="book-page" data-tooltip-container data-tooltip-label="Accéder au portfolio"></div>
+        <div id="book-corner" data-tooltip-container data-tooltip-label="Accéder au portfolio"></div>
+    </a>
+    <header>
+        <nav>
+            <div id="logo-container">
+                <a class="full-width" href=".">
+                    <img src="img/logo.png"/>
+                </a>
+            </div>
+            <!-- Les icones etant de tailles legerement differentes, j'ai préféré les adapter individuellement en inline -->
+            <ul id="icones-nav" class="icones">
+                <li>
+                    <a href="portfolio/" style="width: 35px">Portfolio →</a>
+                </li>
+                <li class="desktop-icone">
+                    <a id="menu-intro" href="#firstPage" style="width: 35px" data-menuanchor="firstPage"><img src="img/menu/intro.png"></a>
+<!--                    <a class="text-menu" >Introduction</a>-->
+                </li>
+                <li class="desktop-icone">
+                    <a id="menu-competence" href="#secondPage" data-menuanchor="secondPage"><img src="img/menu/ampoule.png"></a>
+<!--                    <a class="text-menu">Compétences</a>-->
+                </li>
+                <li class="desktop-icone">
+                    <a id="menu-parcour" href="#3rdPage" data-menuanchor="3rdPage"><img src="img/menu/sac.png"></a>
+<!--                    <a class="text-menu">Parcours</a>-->
+                </li>
+                <li class="desktop-icone">
+                    <a id="menu-experience" href="#4thpage" data-menuanchor="4thPage"><img src="img/menu/code.png"></a>
+<!--                    <a class="text-menu">Éxperience</a>-->
+                </li>
+                <li class="desktop-icone">
+                    <a id="menu-passion" href="#lastPage" data-menuanchor="lastPage"><img src="img/menu/coeur.png" style="transform: scale(0.9)"></a>
+<!--                    <a class="text-menu">Passions</a>-->
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="full-width" id="fullpage">
+        <div id="accroche" class="section">
+            <h1>Rodrigue K.</h1>
+            <picture>
+                <img src="img/original.gif">
+            </picture>
+            <h3>Développeur web & <br> créateur multimédia</h3>
+            <div class="skew">
+                <p>Développeur enthousiaste (de front-end et de back), et également passionné par beaucoup d'autre choses. Je vous souhaite une bonne visite de mon site</p>
+            </div>
+            <a href="#secondPage" class="scroll">
+                <p>Compétences</p>
+                <picture>
+                    <img src="img/scrolldown.gif">
+                </picture>
+            </a>
+        </div>
+        <div id="competence" class="section">
+            <h2>Compétences</h2>
+            <div id="frontend" class="part">
+                <h3>Front-end</h3>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/html.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>HTML</strong>
+                        <p>Excellentes connaissances</p>
+                    </div>
+                </div>
+                <div class="info html">
+                    <h4>HTML 5</h4>
+                    <p>L'HTML est le language sur lequel je travaille depuis le plus longtemps. J'en ai une excellente compréhension et peux entre autre:</p>
+                    <ul>
+                        <li>Créer des structures claires</li>
+                        <li>Faire des Mails HTML</li>
+                        <li>Optimiser le DOM</li>
+                    </ul>
+                </div>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/css.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>CSS / SCSS</strong>
+                        <p>Excellentes connaissances</p>
+                    </div>
+                </div>
+                <div class="info css">
+                    <h4>CSS 3</h4>
+                    <ul>
+                        <li>Très bonne maîtrise des sélécteurs</li>
+                        <li>Très à l'aise sur les animation et effets</li>
+                        <li>Compétent aussi bien en CSS qu'en SCSS</li>
+                        <li>Maitrise Bootstrap, Halfmoon et Tailwind</li>
+                    </ul>
+                </div>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/javascript.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>Javascript</strong>
+                        <p>Très bonnes connaissances</p>
+                    </div>
+                </div>
+                <div class="info js">
+                    <h4>JavaScript</h4>
+                    <ul>
+                        <li>Passionné d'Algorithmie</li>
+                        <li>Vue.JS (notions)</li>
+                        <li>React JS (préféré à vue)</li>
+                        <li>Decouvre Meteor</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="backend" class="part">
+                <h3>Back-end</h3>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/php.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>PHP 7</strong>
+                        <p>Bonnes connaissances</p>
+                    </div>
+                </div>
+                <div class="info php">
+                    <h4>PHP 7</h4>
+                    <ul>
+                        <li>Création et travail sur un MVC</li>
+                        <li>Travail sur Laravel</li>
+                        <li>Gestion de requètes SQL</li>
+                    </ul>
+                </div>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/ajax.png" style="transform: scale(0.75)">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>Ajax</strong>
+                        <p>Très bonnes connaissances</p>
+                    </div>
+                </div>
+                <div class="info ajax">
+                    <h4>Ajax</h4>
+                    <ul>
+                        <li>Requêtes Ajax sécurisées</li>
+                        <li>Interprétation XML/JSON</li>
+                        <li>Gestion des promesses</li>
+                    </ul>
+                </div>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/sql.png" style="margin-top: 10px">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>SQL</strong>
+                        <p>Très bonnes connaissances</p>
+                    </div>
+                </div>
+                <div class="info sql">
+                    <h4>SQL</h4>
+                    <ul>
+                        <li>Requêtes SQL</li>
+                        <li>Création BDD structurée</li>
+                        <li>MCD / MLDR</li>
+                        <li>SQL Workbench</li>
+                        <li>Compass / MangoDB</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="graphisme" class="part">
+                <h3>Graphisme</h3>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/photoshop.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>Photoshop</strong>
+                        <p>Excellentes connaissances</p>
+                    </div>
+                </div>
+                <div class="info ps">
+                    <h4>Photoshop</h4>
+                    <p>Photoshop est le logiciel que je maîtrise le mieux. M'en servant régulièrement depuis le collège, j'ai appri a maitriser:</p>
+                    <ul>
+                        <li>Les <strong>détourages</strong> de tous types</li>
+                        <li>La <strong>retouche</strong> photo avancée</li>
+                        <li>Le dessin à la <strong>tablette</strong></li>
+                        <li>La création d'affiches, brochures et miniatures</li>
+                    </ul>
+                </div>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/premier.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>Premiere Pro</strong>
+                        <p>Excellentes connaissances</p>
+                    </div>
+                </div>
+                <div class="info pp">
+                    <h4>Premiere Pro</h4>
+                    <p><strong>4 ans d'éxperience</strong> à monter des projets personnels ainsi que des projets universitaires. Premiere Pro a occupé une <strong>partie importante</strong> de notre enseignement audiovisuel en DUT MMI</p>
+                </div>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/illustrator.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>Illustrator</strong>
+                        <p>Très bonnes connaissances</p>
+                    </div>
+                </div>
+                <div class="info ill">
+                    <h4>Illustrator</h4>
+                    <p>J'utilise régulièrement Illustrator pour mes projets, vous pouvez retrouver les plus importants sur mon portfolio</p>
+                    <ul>
+                        <li>Création d'illustrations</li>
+                        <li>Création d'icones et de personnages</li>
+                        <li>Travail typographique</li>
+                    </ul>
+                </div>
+<!--                <div class="language xd">-->
+<!--                    <picture>-->
+<!--                        <img src="img/icones/xd.svg">-->
+<!--                    </picture>-->
+<!--                    <div class="comp-text">-->
+<!--                        <strong>Adobe XD</strong>-->
+<!--                        <p>Très bonnes connaissances</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="info xd">-->
+<!--                    <h4>Adobe XD</h4>-->
+<!--                    <p>Capable de créer aisémant des <strong>zoning</strong> et <strong>maquettes</strong>. A l'aise sur les effets de <strong>transitions</strong> et <strong>animations</strong></p>-->
+<!--                </div>-->
+<!--                <div class="language">-->
+<!--                    <picture>-->
+<!--                        <img src="img/icones/indesign.svg">-->
+<!--                    </picture>-->
+<!--                    <div class="comp-text">-->
+<!--                        <strong>InDesign</strong>-->
+<!--                        <p>Bonnes connaissances</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="info id">-->
+<!--                    <h4>InDesign</h4>-->
+<!--                    <p>J'ai utilisé InDesign plusieurs fois pour de la mise en page de magazine et brochures. <a href="https://www.rodriguoh.fr/2018/04/08/nike-tennis-magazine/">Cliquez ici</a> pour découvrir ma création InDesign la plus accomplie</p>-->
+<!--                </div>-->
+            </div>
+            <div id="langue" class="part">
+                <h3>Langues</h3>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/united-kingdom.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>Anglais</strong>
+                        <p>Bilingue anglophone</p>
+                    </div>
+                </div>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/germany.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>Allemand</strong>
+                        <p>Bonnes connaissances</p>
+                    </div>
+                </div>
+                <div class="language">
+                    <picture>
+                        <img src="img/icones/netherlands.svg">
+                    </picture>
+                    <div class="comp-text">
+                        <strong>Néerlandais</strong>
+                        <p>Bonnes connaissances</p>
+                    </div>
+                </div>
+                <div id="info-container"></div>
+            </div>
+            <a href="#3rdPage" class="scroll">
+                <p>Parcours</p>
+                <picture>
+                    <img src="img/scrolldown.gif">
+                </picture>
+            </a>
+        </div>
+        <div id="parcours" class="section">
+            <h2>Parcours</h2>
+            <div id="ecole-container">
+                <div id="univ" class="part">
+                    <h3>Université</h3>
+                    <div class="ecole">
+                        <picture>
+                            <img src="img/univ-aix.png">
+                        </picture>
+                        <div class="ecole-text">
+                            <strong>LP MIW</strong>
+                            <i>2020 - 2021</i>
+                            <p>Université Aix-Marseille (IUT Gap)</p>
+                        </div>
+                    </div>
+                    <div class="ecole">
+                        <picture>
+                            <img src="img/univ-york.png">
+                        </picture>
+                        <div class="ecole-text">
+                            <strong>DUETI</strong>
+                            <i>2018 - 2019</i>
+                            <p>York University (Toronto, Canada)</p>
+                        </div>
+                    </div>
+                    <div class="ecole">
+                        <picture>
+                            <img src="img/logo-uga.png">
+                        </picture>
+                        <div class="ecole-text">
+                            <strong>DUT MMI</strong>
+                            <i>2016 - 2018</i>
+                            <p>Université Grenoble-Alpes (IUT 1)</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="autre" class="part">
+                    <h3>Autres formations</h3>
+                    <div class="ecole">
+                        <picture>
+                            <img src="img/IELTS_logo.png">
+                        </picture>
+                        <div class="ecole-text">
+                            <strong>IELTS</strong>
+                            <i>2019</i>
+                            <p>British Council - note: 7</p>
+                        </div>
+                    </div>
+                    <div class="ecole">
+                        <picture>
+                            <img src="img/scouts.png">
+                        </picture>
+                        <div class="ecole-text">
+                            <strong>B.A.F.A</strong>
+                            <i>2017</i>
+                            <p>Formation passé chez les scouts</p>
+                        </div>
+                    </div>
+                    <div class="ecole">
+                        <picture>
+                            <img src="img/esad.png">
+                        </picture>
+                        <div class="ecole-text">
+                            <strong>Dessin d'observation</strong>
+                            <i>2014 - 2016</i>
+                            <p>Ecole sup. d'Art et Design de Grenoble</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="lycee" class="part">
+                    <h3>Lycée</h3>
+                    <div class="ecole">
+                        <picture>
+                            <img src="img/logo-lycee.svg">
+                        </picture>
+                        <div class="ecole-text">
+                            <strong>Bac. STI2D</strong>
+                            <i>2014 - 2016</i>
+                            <p>Lycée Pierre Termier (Grenoble)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#4thpage" class="scroll">
+                <p>Éxperience</p>
+                <picture>
+                    <img src="img/scrolldown.gif">
+                </picture>
+            </a>
+        </div>
+        <div id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="job-container">
+                <h3>Experience Multimedia</h3>
+                <div class="job">
+                    <picture>
+                        <img src="img/experience/logo%20potager%20tt.svg">
+                    </picture>
+                    <div class="job-text">
+                        <strong>Dev. web/Graphiste</strong>
+                        <p>Potager Tout Terrain</p><i>2020 - aujourd'hui</i>
+                    </div>
+                </div>
+                <blockquote class="job-detail">Depuis plusieurs mois j'interviens sur la <strong>création graphique et web</strong> pour une future startup. Je travaille sur le <strong>développement de la plateforme web</strong> et mobile ainsi que sur <strong>beaucoup de visuels</strong> (infographies, graphismes et vidéos).</blockquote>
+                <div class="job">
+                    <picture>
+                        <img src="img/experience/uop-logo-stacked.svg">
+                    </picture>
+                    <div class="job-text">
+                        <strong>Stagiaire Multimedia</strong>
+                        <p>Université de Portsmouth</p><i>2018 - 3mois</i>
+                    </div>
+                </div>
+                <blockquote class="job-detail">Création <strong>graphiques et web</strong> pour l'évènement télévisé de fin d'année de l'UoP. J'ai travaillé pendant 3 mois et dans <strong>une équipe de 4</strong> sur beaucoup de tâches différentes.</blockquote>
+                <div class="job">
+                    <picture>
+                        <img src="img/experience/unnamed.jpg">
+                    </picture>
+                    <div class="job-text">
+                        <strong>Réalisateur vidéo</strong>
+                        <p>Office du tourisme de Grenoble </p><i>2018 - 2mois</i>
+                    </div>
+                </div>
+                <blockquote class="job-detail">J'ai travaillé sur la création d'un <strong>web-documentaire</strong> couvrant les événements de célébration de l’anniversaire des <strong>50 ans des Jeux Olympiques</strong> d'hiver de Grenoble</blockquote>
+            </div>
+            <div class="job-container">
+                <h3>Autre éxperience</h3>
+                <div class="job">
+                    <picture>
+                        <img src="img/experience/eybens.jpg">
+                    </picture>
+                    <div class="job-text">
+                        <strong>Animateur périscolaire</strong>
+                        <p>Commune d'eybens</p><i>2019 - 2020</i>
+                    </div>
+                </div>
+                <blockquote class="job-detail">Suite a plusieurs evenements personnels, j'ai suspendu mes études pendant un an. Étant donnée mon experience dans l'animation chez les scouts (pour lesquelles j'avais passé le BAFA), j'ai tout de même travaillé à mi-temps pour le periscolaire, <strong>C'etait une très belle éxperience</strong></blockquote>
+                <h3>Projets</h3>
+                <div class="projet">
+                    <picture>
+                        <img src="img/experience/logo-sombre.png" style="width: 70%; margin: auto">
+                    </picture>
+                    <div class="job-text">
+                        <strong>Application de Click'n Collect</strong>
+                        <p>Licence MIW - 2021</p>
+                    </div>
+                </div>
+                <blockquote class="job-detail">
+                    <strong>Technologies utilisées (projet en cours)</strong>
+                    <ul>
+                        <li>Laravel</li>
+                        <li>HTML/SCSS et JS</li>
+                        <li>OpenWeatherMap et Leaflet</li>
+                    </ul>
+                    <a href="#">Le projet reste encore a publier</a>
+                </blockquote>
+                <div class="projet">
+                    <picture>
+                        <img src="img/experience/map.png" style="width: 70%; margin: auto">
+                    </picture>
+                    <div class="job-text">
+                        <strong>Carte Interactive (API Météo)</strong>
+                        <p>Licence MIW - 2021</p>
+                    </div>
+                </div>
+                <blockquote class="job-detail">
+                    <strong>Technologies utilisées</strong>
+                    <ul>
+                        <li>OpenWeatherMap et Leaflet</li>
+                        <li>HTML/SCSS et JS</li>
+                        <li>API Netanamo</li>
+                    </ul>
+                    <a href="https://www.theoboudier.fr/old/coursMIW/TP-MiwWeatherMap/">Voir le projet en cliquant ici</a>
+                </blockquote>
+                <div class="projet">
+                    <picture>
+                        <img src="img/experience/morpion.png" style="width: 70%; margin: auto">
+                    </picture>
+                    <div class="job-text">
+                        <strong>Morpion JavaScript</strong>
+                        <p>Licence MIW - 2021</p>
+                    </div>
+                </div>
+                <blockquote class="job-detail">
+                    <strong>Technologies utilisées</strong>
+                    <ul>
+                        <li>LocalStorage (Partie, score, pseudos)</li>
+                        <li>HTML/Css et JS</li>
+                    </ul>
+                    <a href="morpion.html">Voir le projet en cliquant ici</a>
+                </blockquote>
+            </div>
+            <a href="#lastPage" class="scroll">
+                <p>Extra-professionnel</p>
+                <picture>
+                    <img src="img/scrolldown.gif">
+                </picture>
+            </a>
+        </div>
+        <div id="profil" class="section">
+            <h2>Passions</h2>
+            <div id="divertissement" class="part">
+                <h3>Divertissement</h3>
+                <div class="activite">
+                    <picture>
+                        <img src="img/profil/dark-vador.svg">
+                    </picture>
+                    <div class="ecole-text">
+                        <strong>Cinéma</strong>
+                        <p>Ma 1<sup>er</sup> passion a été la création cinématographique, et je la porte encore aujourd'hui</p>
+                    </div>
+                </div>
+                <div class="activite">
+                    <picture>
+                        <img src="img/profil/lama.svg">
+                    </picture>
+                    <div class="ecole-text">
+                        <strong>Jeu-Vidéo</strong>
+                        <p>Je joue parfois, quand je peux</p>
+                    </div>
+                </div>
+                <div class="activite">
+                    <picture>
+                        <img src="img/profil/cerveau.png">
+                    </picture>
+                    <div class="ecole-text">
+                        <strong>Psychologie</strong>
+                        <p>Très interréssé par les fonctionnements humains</p>
+                    </div>
+                </div>
+            </div>
+            <div id="occupation" class="part">
+                <h3>Activités</h3>
+                <div class="activite">
+                    <picture>
+                        <img src="img/profil/goku.svg">
+                    </picture>
+                    <div class="ecole-text">
+                        <strong>Dessin</strong>
+                        <p>Je dessine depuis longtemps. J'ai également suivi pendant 3 ans des cours de dessin d'observation</p>
+                    </div>
+                </div>
+                <div class="activite">
+                    <picture>
+                        <img src="img/icones/icons8-feu-de-camp-64.png" style="transform: scale(0.9)">
+                    </picture>
+                    <div class="ecole-text">
+                        <strong>Scoutisme</strong>
+                        <p>J'ai été chef scout pendant plus de 4ans entre 2016 et 2020</p>
+                    </div>
+                </div>
+                <div class="activite">
+                    <picture>
+                        <img src="img/profil/youtube.svg">
+                    </picture>
+                    <div class="ecole-text">
+                        <strong>YouTube</strong>
+                        <p>Je fais des vidéos depuis 2 ans</p>
+                    </div>
+                </div>
+            </div>
+            <div id="sport" class="part">
+                <h3>Sports</h3>
+                <div class="activite">
+                    <picture>
+                        <img src="img/profil/tennis.png">
+                    </picture>
+                    <div class="ecole-text">
+                        <strong>Tennis</strong>
+                        <p>Mon sport préféré, aussi bien a jouer qu'a regarder</p>
+                    </div>
+                </div>
+                <div class="activite">
+                    <picture>
+                        <img src="img/profil/ballon.png">
+                    </picture>
+                    <div class="ecole-text">
+                        <strong>Football</strong>
+                        <p>Également un sport que j'aime regadrer, aussi y jouer mais je suis moins bon</p>
+                    </div>
+                </div>
+            </div>
+	    <p style="text-align: center; margin-top: 30px; width: 100%">Made with ❤️ by Rodrigue K.</p>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="scripts/fullpage.js"></script>
+<script src="scripts/tooltip.js"></script>
+<script>
+
+    function isElementInViewport(el) {
+
+        var rect     = el.getBoundingClientRect(),
+            vWidth   = window.innerWidth || document.documentElement.clientWidth,
+            vHeight  = window.innerHeight || document.documentElement.clientHeight,
+            efp      = function (x, y) { return document.elementFromPoint(x, y) };
+
+        if (rect.right < 0 || rect.bottom < 0
+            || rect.left > vWidth || rect.top > vHeight)
+            return false;
+
+        return (
+            el.contains(efp(rect.left,  rect.top))
+            ||  el.contains(efp(rect.right, rect.top))
+            ||  el.contains(efp(rect.right, rect.bottom))
+            ||  el.contains(efp(rect.left,  rect.bottom))
+        );
+    }
+
+    function onVisibilityChange(el, callback) {
+        var old_visible;
+        return function () {
+            var visible = isElementInViewport(el);
+            if (visible != old_visible) {
+                old_visible = visible;
+                if (typeof callback == 'function') {
+                    callback();
+                }
+            }
+        }
+    }
+
+    var handler = onVisibilityChange(document.getElementById('langue'), function() {
+        document.getElementById('info-container').classList.add("animation-class");
+    });
+
+    $(window).on('resize scroll', handler);
+
+    jQuery(document).ready(function(){
+        function resizeForm(){
+            var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
+            if(width > 1024){
+                $('#fullpage').fullpage({
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                    menu: '#icones-nav',
+                    scrollBar: true,
+                    slidesNavigation: true
+                });
+            }else{
+                let ancors = ['#competence', '#parcours', '#experience', '#profil'];
+                let scrolls = document.getElementsByClassName('scroll');
+                for (let i = 0; i < ancors.length; i++){
+                    scrolls[i].href = ancors[i];
+                }
+            }
+        }
+
+        window.onresize = resizeForm;
+        resizeForm();
+    });
+</script>
+</html>
